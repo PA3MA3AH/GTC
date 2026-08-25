@@ -1,0 +1,35 @@
+{
+	"geode": "5.9.0",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	"id": "jyste.gtc",
+	"name": "Geode Traffic Controller",
+	"version": "v1.0.0",
+	"developer": "Jyste",
+	"description": "GTC (Geode Traffic Controller) this is a modification for Geometry Dash that will allow you to manage the game's traffic, see all the game's connections such as music downloads, Globed traffic, as well as configure proxies right inside the game",
+	"dependencies": {
+		"geode.node-ids": ">=v1.23.3"
+	},
+	"settings": {
+	    "ip-mode": {
+	        "name": "IP Version",
+	        "description": "0 = IPv4 only, 1 = IPv6 only, 2 = IPv4 + IPv6 (dual stack)",
+	        "type": "int",
+	        "default": 2,
+	        "min": 0,
+	        "max": 2
+	    },
+	    "default-protocol": {
+	        "name": "Default Tunnel Protocol",
+	        "description": "0 = WireGuard, 1 = VLESS. Applies to any traffic category not overridden in the Traffic Controller popup.",
+	        "type": "int",
+	        "default": 0,
+	        "min": 0,
+	        "max": 1
+	    }
+	}
+}
